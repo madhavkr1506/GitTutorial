@@ -1,6 +1,7 @@
 package com.example.githubtutorial
 
 import android.os.Bundle
+import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -19,9 +20,24 @@ class GitFragment : Fragment() {
         view.findViewById<TextView>(R.id.DetailedTextView).text = detailedText.toString();
 
         val closeButton = view.findViewById<Button>(R.id.CloseFragment);
-        closeButton.setOnClickListener{
-            (activity as? GitBasic)?.hideFragment();
+        closeButton?.setOnClickListener{
+            when(val parentActivity = activity){
+                is GitBasic -> {
+                    Log.d("Git Fragment","Closing Git Basic");
+                    parentActivity.hideFragment();
+                }
+                is GitBranches -> {
+                    Log.d("Git Fragment","Closing Git Branches");
+                    parentActivity.hideFragment();
+                }
+
+                else -> {
+                    Log.d("Git Fragment","Activity type not recognised");
+                }
+            }
+
         }
+
         return view
     }
 
