@@ -12,7 +12,7 @@
         android:textColor="@color/white"
         android:textSize="20sp"
         android:padding="10dp"
-        android:background="@color/black"
+        android:background="#9C27B0"
         android:textStyle="normal"
         android:textColorHighlight="@color/white"
         android:textAlignment="viewStart"

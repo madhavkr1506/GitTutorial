@@ -30,6 +30,7 @@
         <activity android:name=".RemoteRepositories"/>
         <activity android:name=".GitConfig"/>
         <activity android:name=".GitLog"/>
+        <activity android:name=".GoogleSearch"/>
     </application>
 
 </manifest>

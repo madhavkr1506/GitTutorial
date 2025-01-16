@@ -46,6 +46,10 @@ class GitIndex : AppCompatActivity() {
             }
         }
 
+        binding.floatingActionButton.setOnClickListener{
+            startActivity(Intent(this,GoogleSearch::class.java));
+        }
+
 
     }
 }
