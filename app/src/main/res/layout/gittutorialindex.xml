@@ -5,6 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:padding="20dp"
+    android:background="@color/maroon"
     >
 
 
@@ -40,6 +41,8 @@
         android:layout_marginBottom="20dp"
         android:layout_margin="20dp"
         app:srcCompat="@android:drawable/ic_input_add"
+        android:backgroundTint="@color/coral"
+        android:outlineAmbientShadowColor="@color/brown"
         />
 
 </RelativeLayout>

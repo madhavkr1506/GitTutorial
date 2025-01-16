@@ -16,7 +16,7 @@
         android:textSize="30sp"
         android:textColor="@color/white"
         android:textAlignment="center"
-        android:background="#0026FB"
+        android:background="@color/black"
         />
 
     <ListView
